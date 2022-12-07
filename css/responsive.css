@@ -1,0 +1,235 @@
+@media screen and (max-width: 990px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  main,
+  .cards,
+  .testimonials-container,
+  .services-container,
+  #about,
+  #contact,
+  #book-online {
+    margin-bottom: 50px;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+  }
+
+  nav {
+    justify-content: flex-end;
+    padding-right: 20px;
+    width: 100px;
+  }
+
+  .burger-menu {
+    position: relative;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .burger-menu-dropdown {
+    position: absolute;
+    background-color: #fff;
+    text-align: center;
+    top: 100px;
+    right: 20px;
+    position: absolute;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  .burger-menu-dropdown a {
+    color: #333;
+    display: block;
+    padding: 20px 30px;
+    font-family: serif;
+  }
+
+  .burger-menu-dropdown a:hover{
+    background-color: #dd6305;
+    color: #fff;
+  }
+
+  /* main */
+  main {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .herobox1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .herobox1 .btn {
+    align-self: flex-end;
+  }
+
+  .herobox1,
+  .herobox2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* cards */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card1 {
+    background-image: url("../images/image-background-card1-big.jpg");
+  }
+
+  .card2 {
+    background-image: url("../images/image-background-card2-big.jpg");
+  }
+
+  .card3 {
+    background-image: url("../images/image-background-card3-big.jpg");
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    height: 500px;
+  }
+
+  .card1 div,
+  .card2 div,
+  .card3 div {
+    display: inline-block;
+    padding-top: 100px;
+  }
+
+  /* testimonials */
+  .tbox {
+    width: 100%;
+  }
+
+  /* services */
+  #services {
+    justify-content: space-around;
+  }
+
+  .service {
+    width: 45%;
+    gap: 0;
+  }
+
+  #servicePopup{
+    flex-direction: column;
+  }
+
+  #closePopup{
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  #closePopup:hover{
+    background-color: #fff;
+  }
+
+  #serviceImg{
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .servicePopupText{
+    color: #000;
+  }
+  
+  #serviceName{
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  #serviceContent{
+    font-size: 1rem;
+  }
+
+  /* contact  */
+  .contact {
+    padding-right: 80px;
+  }
+
+  /* forms */
+  .form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin: 40px 10px;
+  }
+
+  /* footer */
+  .footer-menu {
+    row-gap: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    gap: 30px;
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  .burger-menu {
+    width: 25px;
+  }
+
+  .burger-menu-dropdown {
+    top: 80px;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-menu {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header {
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .burger-menu-dropdown {
+    top: 65px;
+  }
+}
